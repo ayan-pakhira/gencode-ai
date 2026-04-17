@@ -1,0 +1,29 @@
+# ENV & SECRETS
+.env
+*.env
+application.properties
+
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# VS Code
+.vscode/
