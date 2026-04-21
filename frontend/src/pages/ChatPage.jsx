@@ -61,9 +61,9 @@ function ChatPage() {
     try {
       if (!isAuthenticated) return;
 
-      console.log("Loading chats with token:", getToken());
+      //console.log("Loading chats with token:", getToken());
       const chatList = await fetchChatList();
-      console.log("Fetched chats:", chatList);
+      //console.log("Fetched chats:", chatList);
 
       if (chatList) {
         setChats(chatList);
@@ -71,7 +71,7 @@ function ChatPage() {
         setChats([]);
       }
     } catch (error) {
-      console.log("Error loading chats:", error);
+      //console.log("Error loading chats:", error);
       throw error;
     }
   };
@@ -91,7 +91,7 @@ function ChatPage() {
         const res = await fetchMessages(activeChatId);
         setMessages(res);
       } catch (error) {
-        console.log("Error loading messages:", error);
+        //console.log("Error loading messages:", error);
         throw error;
       }
     };
@@ -102,12 +102,12 @@ function ChatPage() {
   const handleDeleteChat = async () => {
     try {
       const response = await deleteChat(activeChatId);
-      console.log("Chat deleted:", response);
+      //console.log("Chat deleted:", response);
       setActiveChatId(null);
       setMessages([]);
       loadChats();
     } catch (error) {
-      console.log("Error deleting chat:", error);
+      //console.log("Error deleting chat:", error);
       throw error;
       toast.error("Failed to delete chat. Please try again.");
     }
@@ -140,7 +140,7 @@ function ChatPage() {
 
         await loadChats();
       } catch (error) {
-        console.error("Error creating chat:", error);
+       // console.error("Error creating chat:", error);
         toast.error("Failed to create chat. Please try again.");
         return;
       }
@@ -191,7 +191,7 @@ function ChatPage() {
           {
             id: Date.now(),
             sender: "AI",
-            content: "⚠ Rate limit exceeded. Try later.",
+            content: "⚠Try later.",
           },
         ]);
       } else {
@@ -212,7 +212,7 @@ function ChatPage() {
   //websocket connection for real-time status updates
   useEffect(() => {
     connectWebSocket((data) => {
-      console.log("WebSocket message received:", data);
+      //console.log("WebSocket message received:", data);
 
       const { chatId, messageId, status } = data;
 

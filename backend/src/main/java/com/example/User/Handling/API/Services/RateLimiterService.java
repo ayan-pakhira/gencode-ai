@@ -13,8 +13,8 @@ public class RateLimiterService {
     private final StringRedisTemplate redisTemplate;
 
     //limits
-    private static final int MAX_REQUESTS_PER_MINUTE = 3;
-    private static final int MAX_REQUESTS_PER_DAY = 5;
+    private static final int MAX_REQUESTS_PER_MINUTE = 4;
+    private static final int MAX_REQUESTS_PER_DAY = 19;
 
     public void validateRateLimit(String userId, AIActionType actionType){
         String minuteKey = buildKey(userId, actionType, "minute");

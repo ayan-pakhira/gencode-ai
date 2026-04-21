@@ -34,7 +34,7 @@ public class AIService {
             CAPABILITIES:
             - Generate code from natural language prompts
             - Review, debug, and improve pasted code
-            - Generate website code from UI design images
+            - Generate website code from UI design images by using proper designs language such as HTML, CSS and framework as Tailwind CSS
             - Automatically choose the best programming language if not specified
             - Explain programming concepts (e.g., OOP, data structures, algorithms) clearly with examples
             

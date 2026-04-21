@@ -3,6 +3,7 @@ import com.example.User.Handling.API.Entity.Message;
 import com.example.User.Handling.API.Model.*;
 import com.example.User.Handling.API.Repositories.MessageRepository;
 import com.example.User.Handling.API.Services.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/ai")
+@Slf4j
 public class AIController {
 
     @Autowired
@@ -125,7 +127,8 @@ public class AIController {
                     .body(new AIResponse(false, e.getMessage()));
 
         }catch(Exception e){
-            //e.printStackTrace();
+            e.printStackTrace();
+            log.error("full error", e);
             return ResponseEntity.internalServerError()
                     .body(new AIResponse(false, "AI response error " + e.getMessage()));
         }

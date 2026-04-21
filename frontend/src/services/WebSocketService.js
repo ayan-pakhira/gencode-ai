@@ -5,7 +5,7 @@ let stompClient = null;
 export const connectWebSocket = (onMessageReceived) => {
     stompClient = new Client({
 
-        brokerURL: "ws://localhost:8080/ws",
+        brokerURL:  `${import.meta.env.VITE_WS_URL}/ws`,
         reconnectDelay: 5000,
 
         onConnect: () => {

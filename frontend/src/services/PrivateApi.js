@@ -2,7 +2,7 @@ import axios from "axios";
 import httpClient from "../config/AxiosHelper";
 import { setToken, getToken} from "./TokenService.js";
 
-export const baseURL = "http://localhost:8080";
+export const baseURL = import.meta.env.VITE_API_URL;
 
 const privateApi = axios.create({
      baseURL : baseURL,
