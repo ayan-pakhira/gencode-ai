@@ -81,7 +81,7 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
         response.setHeader("Authorization", "Bearer " + token);
         response.setContentType("application/json");
         response.sendRedirect(
-                "http://localhost:3000/oauth-success?token=" + token
+                "http://gencodeai.cloud/oauth-success?token=" + token
         );
 
 
