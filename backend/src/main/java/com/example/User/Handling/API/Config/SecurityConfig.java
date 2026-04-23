@@ -46,6 +46,7 @@ public class SecurityConfig {
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/api/**").permitAll()
                         .requestMatchers("/api/v1/**").permitAll()
+                        .requestMatchers("/oauth2/**", "/login/**").permitAll()
                         .requestMatchers("/chat/**").hasAnyRole("USER", "ADMIN")
                         .requestMatchers("/ai/**").hasAnyRole("USER", "ADMIN")
                         .requestMatchers("/message/**").hasAnyRole("USER", "ADMIN")
