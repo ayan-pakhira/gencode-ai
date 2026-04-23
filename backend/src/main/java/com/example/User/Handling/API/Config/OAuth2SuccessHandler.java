@@ -38,6 +38,8 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
 
         OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
 
+        System.out.println("SUCCESS HANDLER HIT");
+        
         String provider = authentication.getAuthorities().stream().findFirst()
                 .map(Object::toString).orElse("GITHUB");
         String providerId = oAuth2User.getAttribute("id").toString();
