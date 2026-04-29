@@ -108,6 +108,49 @@ It demonstrates the ability to design and build systems that handle:
 - Production-level deployment
 
 
+## 📸 Screenshots
+
+### 🏠 Landing Page
+Clean and intuitive entry point for users to interact with the platform.
+
+![Landing Page](./docs/landing-page.png)
+
+---
+
+### 💬 Chat Interface
+Interactive chat-based UI for communicating with the AI system.
+
+![Chat Page](./docs/chat-page.png)
+
+---
+
+### 🧠 Text to Code Generation
+Generate production-ready code using natural language prompts.
+
+![Text to Code](./docs/text-to-code.png)
+
+---
+
+### 📖 Code Explanation
+Understand generated code with AI-powered explanations.
+
+![Explanation](./docs/explaination.png)
+
+---
+
+### 📊 Code Quality Review
+Analyze code quality and receive structured feedback.
+
+![Code Quality](./docs/code-quality.png)
+
+---
+
+### 🖼️ Image to Code Generation
+Convert images (handwritten or screenshots) into working code.
+
+![Image to Code](./docs/image-to-code.png)
+
+
 
 
 
