@@ -158,6 +158,23 @@ Convert images (handwritten or screenshots) into working code.
 ![Image to Code](./docs/image-to-code.png)
 
 
+## ⚙️ Local Setup
+
+### Clone Repository
+git clone https://github.com/your-username/ai-code-platform.git
+
+### Backend Setup
+cd backend
+mvn clean install
+mvn spring-boot:run
+
+### Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+### Environment Variables
+Create `.env` files for frontend and backend with required configurations.
 
 
 
