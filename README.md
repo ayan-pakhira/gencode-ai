@@ -2,6 +2,13 @@
 
 An AI-powered developer productivity platform that generates, analyzes, and reviews code from text prompts and images.
 
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
+![Docker](https://img.shields.io/badge/Container-Docker-blue)
+![AWS](https://img.shields.io/badge/Deployment-AWS-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 ##  Overview
 
 This project is a full-stack AI-powered platform designed to enhance developer productivity by enabling:
