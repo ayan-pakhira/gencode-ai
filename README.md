@@ -161,7 +161,7 @@ Convert images (handwritten or screenshots) into working code.
 ## ⚙️ Local Setup
 
 ### Clone Repository
-git clone https://github.com/your-username/ai-code-platform.git
+git clone https://github.com/ayan-pakhira/gencode-ai.git
 
 ### Backend Setup
 cd backend
