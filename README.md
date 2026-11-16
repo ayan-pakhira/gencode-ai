@@ -24,7 +24,7 @@ The platform integrates modern AI capabilities with a scalable full-stack archit
 
 🔗 https://gencodeai.cloud/
 
-> ⚠️ Note: The application may take a few seconds to load due to cold starts (if applicable).
+> ⚠️ Note: The live link will back soon, till then kindly refer the snapshot attached to the documents.
 
 ## Features
 
